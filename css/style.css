@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    --bg-geral: rgb(100 150 150);
+    --bg-main: rgb(14, 73, 73);
+    --bg-fonte: rgb(255 255 255);
+}
+
+* {
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg-geral);
+    font-family: 'Open Sans', sans-serif;    
+    font-size: .9rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--bg-main);
+    color: var(--bg-fonte);
+    height: 60px;
+}
+
+header h1 {
+    width: 95%;
+    text-align: center;
+}
+
+header img {
+    width: 75%;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    background: var(--bg-main);    
+    padding: 20px;   
+    border-radius: 20px; 
+}
+
+.card {
+    display: block;    
+    width: 22%;
+    height: 20%;
+    margin: 0 auto;   
+    border-radius: 20px;
+    border: 1px solid var(--bg-geral);      
+    margin-bottom: 10px;      
+    background: var(--bg-geral);    
+}
+
+.card:hover {
+    box-shadow: 10px 10px 15px #a4a4a4;    
+}
+
+.card img {
+    width: 70%;
+    margin-left: 20px;
+}
+
+.card h2 {
+    color: var(--bg-fonte);
+    text-align: center;
+}
+
+footer {
+    height: 40px;
+    background: var(--bg-main);
+    color: var(--bg-fonte);
+    text-align: center;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}

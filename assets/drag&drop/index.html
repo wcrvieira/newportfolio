@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1>To-do list</h1>
+    <main class="example-parent">        
+        <section class="example-origin">
+           Lista
+            <section id="draggable-1" class="example-draggable" draggable="true" ondragstart="onDragStart(event);">
+                Item1
+            </section>
+            <section id="draggable-2" class="example-draggable" draggable="true" ondragstart="onDragStart(event);">
+                Item2
+            </section>
+            <section id="draggable-3" class="example-draggable" draggable="true" ondragstart="onDragStart(event);">
+                Item3
+            </section>
+            <section id="draggable-4" class="example-draggable" draggable="true" ondragstart="onDragStart(event);">
+                Item4
+            </section>
+        </section>
+
+        <section class="example-dropzone" ondragover="onDragOver(event);" ondrop="onDrop(event);">
+            Pronto
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

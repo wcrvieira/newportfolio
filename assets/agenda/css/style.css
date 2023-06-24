@@ -1,0 +1,113 @@
+:root {
+    --primary-color: rgb(250 200 125);
+    --secondary-color: #0f0f0b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-image: url("../images/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    font: bold 2rem 'Open Sans', sans-serif;
+}
+
+.agenda {
+    display: flex;
+    width: 50vw;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    gap: 15px;
+}
+
+.agenda_titulo {
+    display: flex;
+    background-color: var(--secondary-color);
+    width: 100%;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    box-shadow: 1px 1px 5px var(--secondary-color);
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+.agenda_lista {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.agenda_item {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    box-shadow: 1px 1px 5px var(--secondary-color);
+}
+
+.agenda_item>section {
+    width: 80%;
+}
+
+.agenda_item:hover {
+    cursor: pointer;
+    transition: all .5s ease;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.agenda_item>input[type='text'] {
+    border: none;
+    width: 80%;
+    font: inherit;
+}
+
+.agenda_item>input[type='button'],
+.agenda_item>input[type='checkbox'] {
+    width: 30px;
+    height: 30px;
+    font: inherit;
+}
+
+.agenda_item>input[type='checkbox']:checked+section {
+    text-decoration: line-through;
+}
+
+.agenda_novoItem {
+    display: flex;
+    background-color: #fff59d;
+    width: 100%;
+    height: 70px;
+    justify-content: space-evenly;
+    padding: 10px 0;
+    box-shadow: 1px 1px 5px var(--secondary-color);
+    margin: 10px;
+    font: inherit;
+}
+
+.agenda_novoItem>input {
+    background-color: #fff59d;
+    border: none;
+    width: 80%;
+    outline: none;
+    font: inherit;
+}
+
+.agenda_novoItem>input::placeholder {
+    font-style: italic;
+    font-weight: normal;
+}
